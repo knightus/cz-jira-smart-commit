@@ -82,8 +82,8 @@ function prompter(cz, commit) {
 
 function formatCommit(commit, answers) {
   commit(filter([
-    answers.message,
     answers.issues,
+    answers.message,
     answers.workflow ? '#' + answers.workflow : undefined,
     answers.time ? '#time ' + answers.time : undefined,
     answers.comment ? '#comment ' + answers.comment : undefined,
